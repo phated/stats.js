@@ -4,7 +4,7 @@
   AMD & CoffeeScript: Phated (blaine@iceddev.com)
 ###
 
-define [], (declare) ->
+define [], ->
   Stats = ->
     _mode = 0
     _modes = 2

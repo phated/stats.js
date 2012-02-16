@@ -7,7 +7,7 @@
 
 (function() {
 
-  define([], function(declare) {
+  define([], function() {
     var Stats;
     return Stats = function() {
       var _bar, _container, _fps, _fpsColors, _fpsDiv, _fpsGraph, _fpsMax, _fpsMin, _fpsText, _frames, _mode, _modes, _ms, _msColors, _msDiv, _msGraph, _msMax, _msMin, _msText, _time, _timeLastFrame, _timeLastSecond, _updateGraph;
