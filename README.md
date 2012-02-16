@@ -18,20 +18,22 @@ This class provides a simple info box that will help you monitor your code perfo
 ### Usage ###
 
 ```javascript
-var stats = new Stats();
+require([ 'Stats' ], function ( Stats ) {
+  var stats = new Stats();
 
-// Align top-left
-stats.getDomElement().style.position = 'absolute';
-stats.getDomElement().style.left = '0px';
-stats.getDomElement().style.top = '0px';
+  // Align top-left
+  stats.getDomElement().style.position = 'absolute';
+  stats.getDomElement().style.left = '0px';
+  stats.getDomElement().style.top = '0px';
 
-document.body.appendChild( stats.getDomElement() );
+  document.body.appendChild( stats.getDomElement() );
 
-setInterval( function () {
+  setInterval( function () {
 
-	stats.update();
+    stats.update();
 
-}, 1000 / 60 );
+  }, 1000 / 60 );
+});
 ```
 
 
@@ -42,6 +44,11 @@ Albeit theorically not as accurate the widget can also be easily inserted to **a
 
 
 ### Change Log ###
+
+2012 02 16 - **AMD**
+
+* Conversion to AMD - Phated (blaine@iceddev.com)
+* Conversion to CoffeeScript - Phated (blaine@iceddev.com)
 
 2012 01 18 - **r9** (2,872 KB, gzip: 1,038 B)
 
